@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - My Tasks</title>
+</head>
+<body>
+
+    <header>
+        <h1>Study Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tasks.html">My Tasks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add a New Task</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="task-name">Task Name:</label><br>
+                    <input type="text" id="task-name" name="task-name" required placeholder="e.g. Read chapter 3">
+                </p>
+                <p>
+                    <label for="task-date">Due Date:</label><br>
+                    <input type="date" id="task-date" name="task-date" required>
+                </p>
+                <p>
+                    <label for="task-priority">Priority:</label><br>
+                    <select id="task-priority" name="task-priority" required>
+                        <option value="">-- Select --</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Add Task</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>My Task List</h2>
+            <p>No tasks yet. Add one above to get started.</p>
+            <!-- Tasks will be displayed here later using JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Study Hub &copy; 2026 - Web Programming I Final Project</p>
+    </footer>
+
+</body>
+</html>
+
